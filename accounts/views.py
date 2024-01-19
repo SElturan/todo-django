@@ -66,7 +66,6 @@ class RegistrationAPIView(generics.CreateAPIView):
 
             return Response({
                 "user": user.email,
-                "role": user.role,
                 "status": status.HTTP_200_OK
             })
 
@@ -100,7 +99,6 @@ class RegistrationAPIView(generics.CreateAPIView):
 
             return Response({
                 "user": user.email,
-                "role": user.role,
                 "status": status.HTTP_201_CREATED
             })
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
@@ -132,7 +130,6 @@ class ResetPasswordAPIView(APIView):
 
         return Response({
             "user": user.email,
-            "role": user.role,
             "status": status.HTTP_200_OK
         })
 
@@ -161,7 +158,6 @@ class VerifyEmailAPIView(APIView):
             return Response({
                 "status": status.HTTP_200_OK,
                 "user": user.email,
-                "role": user.role
 
             })
         return Response(serializer.error, status=status.HTTP_404_NOT_FOUND)
@@ -206,7 +202,6 @@ class SetPasswordAPIView(APIView):
                 "status": status.HTTP_200_OK,
                 "id": user.id,
                 "user": user.email,
-                "role": user.role,
                 "refresh": str(refresh),
                 "access": str(refresh.access_token),
             })
@@ -235,7 +230,6 @@ class UserLoginView(generics.GenericAPIView):
                 
                 'id': user.id,
                 'email': user.email,
-                'role': user.role,
                 'refresh': str(refresh),
                 'access': str(refresh.access_token)
             }, status=status.HTTP_200_OK)
@@ -255,7 +249,6 @@ class AccessTokenView(ObtainAuthToken):
             "status": status.HTTP_200_OK,
             "id": user.id,
             "email": user.email, 
-            "role": user.role,
         })
 
 

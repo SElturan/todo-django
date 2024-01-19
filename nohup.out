@@ -16,3 +16,66 @@ Watching for file changes with StatReloader
 [19/Jan/2024 16:27:54] "GET /swagger/ HTTP/1.1" 200 2234
 [19/Jan/2024 16:27:55] "GET /swagger/?format=openapi HTTP/1.1" 200 10823
 [19/Jan/2024 16:27:55] "GET /swagger/?format=openapi HTTP/1.1" 200 10823
+/dev/todo_django/todo/accounts/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 19, 2024 - 16:27:23
+Django version 3.2, using settings 'todo.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/dev/todo_django/todo/accounts/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 19, 2024 - 16:31:59
+Django version 3.2, using settings 'todo.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/dev/todo_django/todo/accounts/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 19, 2024 - 16:32:03
+Django version 3.2, using settings 'todo.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/dev/todo_django/todo/accounts/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 19, 2024 - 16:32:08
+Django version 3.2, using settings 'todo.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/dev/todo_django/todo/accounts/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 19, 2024 - 16:32:12
+Django version 3.2, using settings 'todo.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/dev/todo_django/todo/accounts/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 19, 2024 - 16:32:21
+Django version 3.2, using settings 'todo.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/dev/todo_django/todo/accounts/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 19, 2024 - 16:32:25
+Django version 3.2, using settings 'todo.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
