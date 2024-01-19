@@ -100,7 +100,7 @@ DATABASES = {
        'USER': 'postgres',
        'PASSWORD':  '123',
        'HOST': '127.0.0.1',
-       'PORT':'5433',
+       'PORT':'5432',
    }
 }
 
@@ -145,7 +145,7 @@ EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 DEFAULT_FROM_EMAIL = 'Todo <'
 
-AUTH_USER_MODEL = 'accounts.User'
+# AUTH_USER_MODEL = 'accounts.User'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
