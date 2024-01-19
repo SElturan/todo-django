@@ -1,12 +1,12 @@
 JAZZMIN_SETTINGS = {
-    "site_title": "IWEX",
-    "site_header": "IWEX",
-    "site_brand": "IWEX-crm",
+    "site_title": "Todo",
+    "site_header": "Todo",
+    "site_brand": "Todo",
    
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": "image/iwex_crm_logo.png",
+    "site_logo": "image/png",
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
-    "login_logo": "image/iwex_1.svg",
+    "login_logo": "image/png",
    
     # Logo to use for login form in dark themes (defaults to login_logo)
     "login_logo_dark": None,
@@ -17,7 +17,7 @@ JAZZMIN_SETTINGS = {
     # Welcome text on the login screen
     "welcome_sign": "Добро пожаловать!",
     # Copyright on the footer
-    "copyright": "IWEX",
+    "copyright": "Todo",
     # List of model admins to search from the search bar, search bar omitted if excluded
     # If you want to use a single search field you dont need to use a list, you can use a simple string
     "search_model": ["auth.User", "auth.Group"],
@@ -32,8 +32,8 @@ JAZZMIN_SETTINGS = {
         {"name": "Home", "url": "admin:index", "permissions": ["auth.view_user"]},
         # external url that opens in a new window (Permissions can be added)
         {
-            "name": "Iwex.kg",
-            "url": "https://vacancies.iwex.kg/",
+            "name": "Todo-link",
+            "url": "https://",
             "new_window": True,
         },
         # model admin to link to (Permissions checked against model)
@@ -47,8 +47,8 @@ JAZZMIN_SETTINGS = {
     # Additional links to include in the user menu on the top right ("app" url type is not allowed)
     "usermenu_links": [
         {
-            "name": "Iwex.kg",
-            "url": "https://www.iwex.kg/",
+            "name": "Todo",
+            "url": "https:",
             "new_window": True,
         },
         {"model": "auth.user"},
@@ -192,7 +192,3 @@ JAZZMIN_UI_TWEAKS = {
     },
     "actions_sticky_top": True
 }
-AUTHENTICATION_BACKENDS = [
-    # Другие бекенды...
-    'applications.accounts.backends.UnhashedPasswordBackend',
-]
