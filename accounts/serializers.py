@@ -139,3 +139,14 @@ class PostDetailSerializers(serializers.ModelSerializer):
     
 
     
+class FriendshipSerializers(serializers.ModelSerializer):
+    class Meta:
+        model = Friendship
+        fields = [
+            'id',
+            'freinds', 
+            'created_at', 
+            ]
+        
+
+    

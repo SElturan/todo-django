@@ -5,7 +5,7 @@ from .models import User, UserProfile, Post, Comment, Friendship
 class UserAdmin(BaseUserAdmin):
     # fields = ['email', 'phone', 'whatsapp_phone', 'password','is_staff','is_employer', 'is_student', 'is_delete', 'is_active', 'is_superuser', ]
     fieldsets = (
-        (None, {'fields': ('email', 'phone', 'verification_code','is_verified_email', 'password' 'is_delete',)}),
+        (None, {'fields': ('email', 'phone', 'verification_code','is_verified_email', 'password', 'is_delete',)}),
         (('Permissions'), {'fields': ('is_staff', 'is_active', 'is_superuser','user_permissions')}),
         (('Important dates'), {'fields': ('last_login',)}),
             )

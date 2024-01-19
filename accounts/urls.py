@@ -18,7 +18,10 @@ urlpatterns = [
     path('posts-detail/', PostDetailListAPIView.as_view(), name='posts'),
 
     path('comments-create/', CommentCreateAPIView.as_view(), name='comments'),
-    
+
+    path('friends/', FriendshipAPIView.as_view(), name='friends'),
+    path('friends-list/', FriendshipListAPIView.as_view(), name='friends'),
+
     
 
 ]

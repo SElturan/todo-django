@@ -20,6 +20,8 @@ from .serializers import *
 from django.template.loader import render_to_string
 from random import randint
 from django.contrib.auth import authenticate, login
+from channels.layers import get_channel_layer
+from asgiref.sync import async_to_sync
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.authtoken.views import ObtainAuthToken
 
@@ -188,6 +190,18 @@ class SetPasswordAPIView(APIView):
             user.is_verified_email = True
             user.save()
             refresh = RefreshToken.for_user(user)
+
+            #здесь мы по вебсокету отправляем сообщение что есть новый юзер 
+            channel_layer = get_channel_layer()
+            async_to_sync(channel_layer.group_send)(
+                "users",
+                {
+                    "type": "user.gossip",
+                    "event": "New User",
+                    "username": user.email,
+                },
+            )
+
             return Response({
                 "status": status.HTTP_200_OK,
                 "id": user.id,
@@ -363,3 +377,24 @@ class CommentCreateAPIView(CreateAPIView):
         return Response(serializers.errors, status=status.HTTP_400_BAD_REQUEST)
     
 
+class FriendshipAPIView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    
+    @swagger_auto_schema(request_body=FriendshipSerializers)
+    def post(self, request, *args, **kwargs):
+        serializers = FriendshipSerializers(data=request.data)
+        if serializers.is_valid():
+            serializers.save(from_user=request.user)
+            return Response(serializers.data, status=status.HTTP_201_CREATED)
+        return Response(serializers.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+
+class FriendshipListAPIView(ListAPIView):
+    serializer_class = FriendshipSerializers
+    permission_classes = [IsAuthenticated]
+
+    def get_queryset(self, *args, **kwargs):
+        user = self.request.user
+        queryset = Friendship.objects.filter(from_user__email=user).select_related('from_user')
+        return queryset
