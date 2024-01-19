@@ -1,0 +1,18 @@
+Watching for file changes with StatReloader
+Error: That port is already in use.
+Watching for file changes with StatReloader
+[19/Jan/2024 16:27:36] "GET /swagger/ HTTP/1.1" 200 2234
+[19/Jan/2024 16:27:37] "GET /static/drf_yasg2/style.css HTTP/1.1" 200 1047
+[19/Jan/2024 16:27:37] "GET /static/drf_yasg2/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 142941
+[19/Jan/2024 16:27:37] "GET /static/drf_yasg2/immutable.min.js HTTP/1.1" 200 56904
+[19/Jan/2024 16:27:37] "GET /static/drf_yasg2/insQ.min.js HTTP/1.1" 200 2093
+[19/Jan/2024 16:27:37] "GET /static/drf_yasg2/url-polyfill.min.js HTTP/1.1" 200 6092
+[19/Jan/2024 16:27:38] "GET /static/drf_yasg2/swagger-ui-init.js HTTP/1.1" 200 14716
+[19/Jan/2024 16:27:38] "GET /static/drf_yasg2/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 329649
+[19/Jan/2024 16:27:39] "GET /static/drf_yasg2/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1036387
+[19/Jan/2024 16:27:40] "GET /static/drf_yasg2/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+[19/Jan/2024 16:27:40] "GET /swagger/?format=openapi HTTP/1.1" 200 10823
+[19/Jan/2024 16:27:41] "GET /swagger/?format=openapi HTTP/1.1" 200 10823
+[19/Jan/2024 16:27:54] "GET /swagger/ HTTP/1.1" 200 2234
+[19/Jan/2024 16:27:55] "GET /swagger/?format=openapi HTTP/1.1" 200 10823
+[19/Jan/2024 16:27:55] "GET /swagger/?format=openapi HTTP/1.1" 200 10823
